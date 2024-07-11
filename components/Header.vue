@@ -1,7 +1,7 @@
 <template>
   <header class="w-screen py-6">
     <div
-      class="max-w-5xl mx-auto rounded-full shadow-sm p-4 flex justify-between item-center bg-white dark:bg-slate-800 lg:mx-0 mx-4"
+      class="max-w-5xl lg:mx-auto rounded-full shadow-sm p-4 flex justify-between item-center bg-white dark:bg-slate-800 mx-4"
     >
       <div class="flex items-center">
         <NuxtLink to="/" externel>
@@ -72,7 +72,7 @@
           outlined
           @click="setColorMode()"
           aria-label="color-mode"
-          class="lg:block hidden"
+          class="lg:flex hidden"
         />
 
         <Button
@@ -81,6 +81,7 @@
           outlined
           @click="showSearch = true"
           aria-label="color-mode"
+          class="lg:hidden flex"
         />
       </div>
     </div>

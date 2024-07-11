@@ -13,7 +13,7 @@
         </div>
         <!-- <Divider layout="vertical" /> -->
         <div
-          class="lg:col-span-6 col-span-12 lg:border-l lg:border-r border-t border-b dark:border-zinc-700"
+          class="lg:col-span-6 col-span-12 lg:border-l lg:border-r lg:border-t-0 lg:border-b-0 border-t border-b dark:border-zinc-700"
         >
           <ArticleCard :article="articles[4]" :basic="true"></ArticleCard>
         </div>
