@@ -11,13 +11,9 @@
         ></NuxtLink>
 
         <Divider layout="vertical" />
-        <Button
-          icon="pi pi-bars"
-          text
-          rounded
-          @click="visible = true"
-          class="lg:hidden block"
-        />
+        <div class="lg:hidden block">
+          <Button icon="pi pi-bars" text rounded @click="visible = true" />
+        </div>
 
         <ul class="lg:flex hidden">
           <li v-for="menu of menus" :key="menu.name" class="mr-4">
@@ -66,23 +62,25 @@
           <i class="pi pi-search absolute top-3.5 left-3.5"></i>
         </div>
 
-        <Button
-          :icon="getIconByMode()"
-          rounded
-          outlined
-          @click="setColorMode()"
-          aria-label="color-mode"
-          class="lg:flex hidden"
-        />
+        <div class="lg:flex hidden">
+          <Button
+            :icon="getIconByMode()"
+            rounded
+            outlined
+            @click="setColorMode()"
+            aria-label="color-mode"
+          />
+        </div>
 
-        <Button
-          icon="pi pi-search"
-          rounded
-          outlined
-          @click="showSearch = true"
-          aria-label="color-mode"
-          class="lg:hidden flex"
-        />
+        <div class="lg:hidden flex">
+          <Button
+            icon="pi pi-search"
+            rounded
+            outlined
+            @click="showSearch = true"
+            aria-label="color-mode"
+          />
+        </div>
       </div>
     </div>
 
