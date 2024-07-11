@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@nuxtjs/sitemap",
+    "@vite-pwa/nuxt",
   ],
 
   ssr: true,
@@ -78,4 +79,53 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: "2024-07-04",
+
+  pwa: {
+    meta: {
+      title: "Gontara | Mohamed GONTARA private blog",
+    },
+    registerType: "autoUpdate",
+    manifest: {
+      name: "Gontara",
+      short_name: "Gontara",
+      description: "Mohamed GONTARA private frontend blog",
+      theme_color: "#4ade80",
+      lang: "en",
+      background_color: "#FFF",
+      orientation: "any",
+      display: "standalone",
+      scope: "/",
+      start_url: "/",
+      icons: [
+        {
+          purpose: "maskable",
+          sizes: "512x512",
+          src: "/pwa/icon512_maskable.png",
+          type: "image/png",
+        },
+        {
+          purpose: "any",
+          sizes: "512x512",
+          src: "/pwa/icon512_rounded.png",
+          type: "image/png",
+        },
+      ],
+      screenshots: [
+        {
+          src: "/img/home.png",
+          sizes: "1078x804",
+          form_factor: "wide",
+          type: "image/png",
+          label: "Gontara | Mohamed GONTARA private blog",
+        },
+      ],
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,png,svg,ico}"],
+      },
+      client: {
+        installPrompt: true,
+        periodicSyncForUpdates: 20,
+      },
+    },
+  },
 });

@@ -4,7 +4,7 @@
       toggleable
       v-for="(article, id) in articles"
       :key="id"
-      class="mb-6 shadow-sm border-none rounded-xl dark:bg-slate-800"
+      class="mb-6 shadow-sm border-none rounded-xl dark:bg-slate-800 lg:mx-0 mx-4"
     >
       <template #header>
         <NuxtLink :to="article._path" external
