@@ -32,7 +32,6 @@
           <AutoComplete
             class="search-text-input"
             placeholder="Search articles"
-            aria-placeholder="search-articales-placeholder"
             aria-label="search-articles"
             v-model="searchLabel"
             panelClass="dark:bg-slate-900"
