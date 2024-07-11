@@ -30,6 +30,8 @@
   }
 }
 
-.p-panel {
-  @apply dark:bg-gray-800;
+.dark-mode {
+  .p-panel {
+    background-color: #1e293b;
+  }
 }

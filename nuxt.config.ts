@@ -23,11 +23,46 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
+      title: "Gontara",
+      meta: [
+        {
+          name: "ogTitle",
+          content: "Gontara | Mohamed GONTARA private blog",
+        },
+        {
+          name: "description",
+          content: "Mohamed GONTARA private blog",
+        },
+        { name: "robots", content: "index, follow" },
+        { name: "canonical", content: "https://www.gontara.dev" },
+
+        {
+          name: "og:title",
+          content: "Gontara | Mohamed GONTARA private blog",
+        },
+        {
+          name: "og:description",
+          content: "Mohamed GONTARA private blog",
+        },
+        { name: "og:image", content: "/img/home.png" },
+        { name: "og:url", content: "https://www.gontara.dev" },
+
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:title",
+          content: "Gontara | Mohamed GONTARA private blog",
+        },
+        {
+          name: "twitter:description",
+          content: "Gontara | Mohamed GONTARA private blog",
+        },
+        { name: "twitter:image", content: "/img/home.png" },
+      ],
     },
   },
 
   site: {
-    url: "https://gontara.com",
+    url: "https://www.gontara.dev",
   },
 
   routeRules: {
