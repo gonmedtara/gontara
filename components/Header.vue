@@ -86,7 +86,7 @@
 
     <Drawer v-model:visible="visible" class="dark:bg-gray-900">
       <template #header>
-        <NuxtLink to="/" externel>
+        <NuxtLink to="/" externel @click="visible = false">
           <div class="flex justify-start items-center">
             <span class="text-2xl font-bold italic">Gontara</span>
             <img src="/public/favicon.ico" alt="plume" class="h-6 ml-1" /></div
@@ -100,6 +100,7 @@
             externel
             class="p-1 hover:font-bold"
             exactActiveClass="border-b  border-b-2 border-green-400 font-bold"
+            @click="visible = false"
             >{{ menu.name }}</NuxtLink
           >
         </li>
