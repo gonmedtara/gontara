@@ -34,7 +34,11 @@
         >
       </div>
       <div class="mb-2">
-        <img :src="article.image.src" :alt="article.image.alt" />
+        <nuxt-img
+          :src="article.image.src"
+          :placeholder="article.image.alt"
+          format="webp"
+        />
       </div>
       <p class="m-0">
         {{ article.description }}

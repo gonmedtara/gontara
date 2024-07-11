@@ -7,7 +7,12 @@
         <article>
           <h1 class="text-2xl font-bold mb-4">{{ doc.title }}</h1>
           <p class="mb-4">{{ doc.description }}</p>
-          <img class="my-8 mx-auto" :src="doc.image.src" :alt="doc.image.alt" />
+          <nuxt-img
+            class="my-8 mx-auto"
+            :src="doc.image.src"
+            :placeholder="doc.image.alt"
+            format="webp"
+          />
           <ContentRenderer :value="doc" />
         </article>
       </ContentDoc>
