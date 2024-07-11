@@ -1,6 +1,7 @@
 .search-text-input {
   &.p-inputtext {
     border-radius: 9999px;
+    @apply pl-8 dark:bg-gray-800;
   }
   &.p-autocomplete {
     border-radius: 9999px;
@@ -8,5 +9,23 @@
       border-radius: 9999px;
       @apply min-w-64 dark:bg-gray-900 pl-10;
     }
+  }
+}
+
+.p-dialog {
+  @apply dark:bg-gray-900;
+  .p-dialog-header,
+  .p-dialog-content {
+    @apply dark:bg-gray-900;
+    border-radius: 12px;
+  }
+}
+
+.p-drawer {
+  @apply dark:bg-gray-900;
+  .p-drawer-header,
+  .p-drawer-content,
+  .p-drawer-footer {
+    @apply dark:bg-gray-900;
   }
 }

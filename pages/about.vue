@@ -1,6 +1,8 @@
 <template>
   <main>
-    <div class="mb-12 bg-white dark:bg-slate-800 px-4 py-8 rounded-xl">
+    <div
+      class="mb-12 bg-white dark:bg-slate-800 px-4 py-8 rounded-xl lg:mx-0 mx-4"
+    >
       <div class="grid grid-cols-12 gap-3">
         <img
           src="https://media.licdn.com/dms/image/C4D03AQESEnkdPICnpg/profile-displayphoto-shrink_200_200/0/1609265435712?e=1725494400&v=beta&t=Dy4SOwF2HQSe9h9fW5YayhnXbi9QISqc9nw8fFSHeoI"

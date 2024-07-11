@@ -1,7 +1,7 @@
 <template>
   <main>
     <div
-      class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mb-12 bg-white dark:bg-slate-800 px-4 py-8 rounded-xl"
+      class="prose dark:prose-invert prose-blockquote:not-italic prose-pre:bg-gray-900 prose-img:ring-1 prose-img:ring-gray-200 dark:prose-img:ring-white/10 prose-img:rounded-lg mb-12 bg-white dark:bg-slate-800 px-4 py-8 rounded-xl lg:mx-0 mx-4"
     >
       <ContentDoc v-slot="{ doc }" tag="article">
         <article>
