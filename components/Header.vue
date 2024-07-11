@@ -7,12 +7,7 @@
         <NuxtLink to="/" externel>
           <div class="flex justify-start items-center">
             <span class="text-2xl font-bold italic">Gontara</span>
-            <nuxt-img
-              src="/public/favicon.ico"
-              class="h-6 ml-1"
-              placeholder="plume"
-              format="webp"
-            /></div
+            <img src="/public/favicon.ico" alt="plume" class="h-6 ml-1" /></div
         ></NuxtLink>
 
         <Divider layout="vertical" />
@@ -37,6 +32,7 @@
           <AutoComplete
             class="search-text-input"
             placeholder="Search articles"
+            aria-placeholder="search-articales-placeholder"
             aria-label="search-articles"
             v-model="searchLabel"
             panelClass="dark:bg-slate-900"
@@ -93,12 +89,7 @@
         <NuxtLink to="/" externel @click="visible = false">
           <div class="flex justify-start items-center">
             <span class="text-2xl font-bold italic">Gontara</span>
-            <nuxt-img
-              src="/public/favicon.ico"
-              class="h-6 ml-1"
-              placeholder="plume"
-              format="webp"
-            /></div
+            <img src="/public/favicon.ico" alt="plume" class="h-6 ml-1" /></div
         ></NuxtLink>
       </template>
       <Divider />
