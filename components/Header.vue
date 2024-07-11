@@ -12,7 +12,13 @@
 
         <Divider layout="vertical" />
         <div class="lg:hidden block">
-          <Button icon="pi pi-bars" text rounded @click="visible = true" />
+          <Button
+            icon="pi pi-bars"
+            text
+            rounded
+            @click="visible = true"
+            aria-label="drawer-button"
+          />
         </div>
 
         <ul class="lg:flex hidden">

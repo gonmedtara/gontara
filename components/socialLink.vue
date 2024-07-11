@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="link.path" external>
+  <NuxtLink :to="link.path" external :aria-label="link.name">
     <div class="flex items-center justify-start pointer">
       <i class="pi" :class="link.icon" :aria-details="link.name"></i>
     </div>
