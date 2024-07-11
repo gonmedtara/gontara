@@ -1,13 +1,11 @@
 <template>
   <div class="px-2 py-3">
-    <nuxt-img
+    <img
       :src="article.image.src"
+      :alt="article.image.alt"
       class="rounded-md mx-auto mb-2"
       :class="{ 'h-20': !basic }"
-      :placeholder="article.image.alt"
-      format="webp"
     />
-
     <div class="mb-2" :class="{ 'flex justify-center': basic }">
       <span
         v-for="word in getArticleKeyWords(article.head.meta)"

@@ -23,11 +23,10 @@
         </div>
       </div>
       <div class="col-span-2">
-        <nuxt-img
+        <img
           :src="article.image.src"
+          :alt="article.image.alt"
           class="rounded-md"
-          :placeholder="article.image.alt"
-          format="webp"
         />
       </div>
     </div>
